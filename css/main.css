@@ -1,1 +1,25 @@
 /* Los estilos de tu proyecto */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.img-drive{
+    background-image: url(../assets/images/conduce.jpg);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+}
+.div{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 2em;
+    padding-top: 7em;
+    right: 0;
+}
+#map {
+    height: 400px;
+    width: 100%;
+   }
