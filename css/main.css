@@ -12,14 +12,15 @@
     padding: 0;
 }
 .div{
-    position: absolute;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 2em;
     padding-top: 7em;
     right: 0;
+    height: 31.26em;
 }
 #map {
-    height: 400px;
+    height: 350px;
     width: 100%;
-   }
+    border: 2px solid #fff;
+}
