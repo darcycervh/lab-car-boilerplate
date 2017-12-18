@@ -18,6 +18,39 @@
   <div class="container-fluid">
     <div class="row">
       <nav class="col-xs-12 col-lg-12 p-4">
+        <div class="nav-extra float-right">
+          <button class="btn btn-light">Viaja</button>
+          <button class="btn btn-light">Conduce</button>
+          <!-- boton login-->
+                  <div class="container">
+                       <button class="btn btn-light" data-toggle="modal" data-target="#login">Inicia Sesión</button>
+                           <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                               <div class="modal-dialog bg-secondary">
+                                   <div class="modal-content bg-light text-dark rounded">
+                                       <div class="modal-body">
+                                         <form action="">
+                                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                             <div class="form-group text-center">
+                                               <img src="assets/images/user.png">
+                                               <hr>
+                                               <div class="input-group">
+                                                 <span class="input-group-addon" id="basic-addon1">User</span>
+                                                 <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                                               </div>
+                                               <div class="input-group">
+                                                 <span class="input-group-addon" id="basic-addon1">User</span>
+                                                 <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                                               </div>
+                                                 <button class="btn btn-block btn-primary">Loging</button>
+                                                 <p>Forgot the password? <a href="#">Click here</a></p>
+                                             </div>
+                                       </div>
+                                    </div>
+                               </div>
+                          </div>
+                      </div>
+                    <!-- boton login-->
+        </div>
         <i class="fa-2x fa fa-bars float-right" aria-hidden="true"></i>
         <img src="assets/images/logoForma.png">
       </nav>
@@ -28,19 +61,86 @@
       <div class="row">
         <div class="col-xs-12 col-lg-12">
           <div class="yellow-div position-absolute bg-warning">
+            <div class="content1">
             <h2>Comienza a viajar con <img class="logo" src="assets/images/logoBlanco.png"></h2>
             <button class="btn btn-light">Descarga la app</button>
           </div>
+          <div class="content2">
+            <h3>Disfruta del viaje</h3>
+            <h3>Eres dueño de tu tiempo</h3>
+            <br>
+            <h5>Viaja con <img class="logo" src="assets/images/logoBlanco.png"></h5>
+            <!-- boton registrate-->
+            <div class="container">
+                 <button class="btn btn-light" data-toggle="modal" data-target="#register">Regístrate</button>
+                     <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                         <div class="modal-dialog bg-secondary">
+                             <div class="modal-content bg-light text-dark rounded">
+                                 <div class="modal-body">
+                                     <form action="">
+                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                         <div class="form-group text-center">
+                                           <button class="btn btn-warning w-100">¿Ya tienes una cuenta?</button>
+                                             <label for="form"><b>O CREA UNA CUENTA NUEVA</b></label>
+                                             <br>
+                                             <div class="input-group">
+                                              <input type="text" class="form-control" placeholder="Nombre">
+                                              <input type="text" class="form-control" placeholder="Apellido">
+                                            </div>
+                                            <div class="input-group">
+                                              <input type="text" class="form-control" placeholder="Correo Electrónico: ejemplo@correo.mxs">
+                                            </div>
+                                            <div class="input-group">
+                                              <input type="text" class="form-control" placeholder="Teléfono">
+                                            </div>
+                                            <div class="input-group">
+                                              <input type="text" class="form-control" placeholder="Contraseña">
+                                            </div>
+                                            <div class="input-group">
+                                              <input type="text" class="form-control" placeholder="Ciudad">
+                                            </div>
+                                            <div class="input-group">
+                                              <input type="text" class="form-control" placeholder="(Opcional): código de invitación">
+                                            </div>
+                                              <select class="form-control" name="" id="">
+                                                  <option value="elige">¿Cómo te enteraste de nosotros?</option>
+                                                  <option value="marca">Opción1</option>
+                                              </select>
+                                             <br>
+                                             <button class="btn btn-block btn-primary">Enviar</button>
+                                         </div>
+                                     </form>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                   <!-- boton registrate -->
+                  <hr><p class="text-center">O bien</p><hr>
+                  <button class="btn btn-light">Conviértete en un conductor</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
   <!-- iniciando segunda sección -->
   <div class="container-fluid bg-warning text-light text-center">
     <div class="row">
       <div class="col-xs-12 col-lg-12">
-        <h3>La Nueva App</h3>
-        <img class="img-iphone p-5" src="assets/images/iPhone6Plus.png">
-        <p>Llega a tu destino aun más rápido</p>
+        <div class="content1">
+          <h3>La Nueva App</h3>
+          <img class="img-iphone p-5" src="assets/images/iPhone6Plus.png">
+          <p>Llega a tu destino aun más rápido</p>
+        </div>
+        <div class="content2">
+          <img class="img-iphone p-5" src="assets/images/iPhone6Plus.png">
+<div class="pharagraph">
+  <h5>Descarga la nueva app</h5>
+  <br>
+  <p>La versión actualizada de Labcar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido</p>
+  <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a donde ir</p>
+</div>
+        </div>
       </div>
     </div>
   </div>
@@ -123,7 +223,6 @@
                 <img src="assets/images/logoBlanco.png" alt="logo labCar">
                 <hr class="col-md-12 bg-light">
             </div>
-
                 <div class="col-xs-3 col-lg-3 mx-auto">
                 <ul class="list-unstyled ">
                     <li>Viaja</li>
