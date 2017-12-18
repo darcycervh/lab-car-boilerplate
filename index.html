@@ -1,1 +1,184 @@
 <!-- Suelta tus manos y tu mente para solucionar este reto -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LabCar</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <!-- enlazando estilos de css de bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!--enlazando iconos-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- iniciando navbar -->
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-xs-12 col-lg-12 p-4">
+        <i class="fa-2x fa fa-bars float-right" aria-hidden="true"></i>
+        <img src="assets/images/logoForma.png">
+      </nav>
+    </div>
+  </div>
+    <!-- iniciando primera sección -->
+    <div class="container-fluid position-relative img-car text-light">
+      <div class="row">
+        <div class="col-xs-12 col-lg-12">
+          <div class="yellow-div position-absolute bg-warning">
+            <h2>Comienza a viajar con <img class="logo" src="assets/images/logoBlanco.png"></h2>
+            <button class="btn btn-light">Descarga la app</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- iniciando segunda sección -->
+  <div class="container-fluid bg-warning text-light text-center">
+    <div class="row">
+      <div class="col-xs-12 col-lg-12">
+        <h3>La Nueva App</h3>
+        <img class="img-iphone p-5" src="assets/images/iPhone6Plus.png">
+        <p>Llega a tu destino aun más rápido</p>
+      </div>
+    </div>
+  </div>
+    <!-- iniciando tercera sección -->
+    <div class="container-fluid position-relative img-drive">
+        <div class="row ">
+            <div class="col-xs-6 col-lg-12">
+                <div class="div position-absolute text-light">
+                <h3>Conduce cuando quieras</h3>
+                <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+                <!-- aplicando modal -->
+               <div class="container">
+                    <button class="btn btn-warning text-light" data-toggle="modal" data-target="#conductor">Conviértete en conductor</button>
+                        <div class="modal fade" id="conductor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog bg-secondary">
+                                <div class="modal-content bg-light text-dark rounded">
+                                    <div class="modal-body">
+                                        <form action="">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <div class="form-group">
+                                                <label for="form"><b>¿Tienes vehículo de 4 puertas?</b></label>
+                                                <select class="form-control" name="" id="">
+                                                    <option value="si">Sí</option>
+                                                    <option value="no">No</option>
+                                                </select>
+                                                <label for="form"><b>Marca</b></label>
+                                                <select class="form-control" name="" id="">
+                                                    <option value="elige">Elige la marca del vehículo</option>
+                                                    <option value="marca">Toyota</option>
+                                                </select>
+                                                <p>¿No ves tu vehículo en la lista? Envía un correo electrónico a <a href="" class="text-info">sociosmdv@uber.com</a></p>
+                                                <label for="form"><b>Modelo</b></label>
+                                                <select class="form-control" name="" id="">
+                                                    <option value="modelo del carro">Modelo 1</option>
+                                                    <option value="modelo del carro">Modelo 2</option>
+                                                </select>
+                                                <label for="form"><b>Año</b></label>
+                                                <select class="form-control" name="" id="">
+                                                    <option value="año">2017</option>
+                                                    <option value="año">2016</option>
+                                                </select>
+                                                <label for="form"><b>Número de matrícula</b></label>
+                                                <select class="form-control" name="" id="">
+                                                    <option value="matricula">Número de matrícula</option>
+                                                </select>
+                                                <p>La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+                                                <br>
+                                                <button class="btn btn-block btn-primary">Enviar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <!-- iniciando cuarta sección -->
+    <div class="container-fluid bg-warning text-light ">
+        <div class="row">
+            <div class="col-xs-12 col-lg-5 position-relative pt-5  ml-5">
+                <h3>Tarifas</h3>
+                <p>Consulta las tarifas LabCar aquí</p>
+                <ul  class="list-unstyled">
+                    <li><i class="fa fa-dot-circle-o  mb-4 mr-2" aria-hidden="true"></i><input class="form-control w-50 d-inline-block" placeholder="Ingrese su punto de partida"></li>
+                    <li><i class="fa fa-paper-plane mb-4 mr-2" aria-hidden="true"></i><input class="form-control w-50 d-inline-block" placeholder="Ingrese su destino"></li>
+                </ul>
+                <button class="btn btn-light text-dark text-uppercase align-middle">Traza la ruta</button>
+            </div>
+            <div class="col-xs-4 col-md-4 position-relative d-inline-block mx-auto mt-3 mb-3"id="map"></div>
+        </div>
+    </div>
+    <!-- iniciando footer -->
+    <div class="container-fluid bg-dark text-light pt-5">
+        <div class="container">
+            <div class="row">
+           <div class="col-xs-12 col-md-12 pb-5">
+                <img src="assets/images/logoBlanco.png" alt="logo labCar">
+                <hr class="col-md-12 bg-light">
+            </div>
+
+                <div class="col-xs-3 col-lg-3 mx-auto">
+                <ul class="list-unstyled ">
+                    <li>Viaja</li>
+                    <li>Conduce</li>
+                    <li>Ciudades</li>
+                    <li>Turismo</li>
+                    <li>Entregas</li>
+                    <li>¿Cómo funciona?</li>
+                    <li>Países</li>
+                    <li>Seguridad</li>
+                </ul>
+                </div>
+                <div class="col-xs-3 col-lg-3">
+                <ul class="list-unstyled">
+                    <li>Oportunidades</li>
+                    <li>Nuestra historia</li>
+                    <li>API de LabCar</li>
+                    <li>Eventos</li>
+                    <li>Desarrolladores</li>
+                    <li>Servicios</li>
+                    <li>Laboratoria</li>
+                    <li>Coders</li>
+                </ul>
+                </div>
+
+                <div class="col-xs-4 col-lg-4">
+                    <ul class="list-unstyled mt-5">
+                        <li><img src="assets/images/appstore.png" alt=""></li>
+                        <li class="mt-3"><img src="assets/images/enBadgeWebGeneric.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-lg-12 pt-5">
+                    <ul class="d-inline-block d-flex justify-content list-unstyled mb-0">
+                        <li><i class="fa fa-facebook ml-2" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter ml-2" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-linkedin ml-2" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-apple ml-2" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-play ml-2" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <br>
+                <hr class="col-xs-12 col-lg-12 bg-light">
+                <p class="ml-4 p-0">&copy; 2017 LabCar technologies Inc.</p>
+        </div>
+        </div>
+    </div>
+    <!-- enlazando la parte de js de bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- mi archivo de js -->
+    <script src="js/app.js"></script>
+    <!-- mapa de google -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC20eDWd_XQyltjQy08uR18L42XM1zDGeU&callback=initMap"
+    async defer>
+  </script>
+</body>
+</html>
