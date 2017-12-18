@@ -1,4 +1,3 @@
-/* Los estilos de tu proyecto */
 *{
     margin: 0;
     padding: 0;
@@ -18,6 +17,32 @@
     padding-top: 7em;
     right: 0;
     height: 31.26em;
+}
+.fa-bars{
+border: 1px solid #bbb;
+padding: 5px;
+color: gray;
+border-radius: 5px;
+}
+.img-car{
+    background-image: url(../assets/images/taxi.jpg);
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+    background-position: bottom;
+}
+.yellow-div{
+  right: 0;
+  margin-top: 200px;
+  width: 80%;
+  padding: 2.5rem;
+}
+.img-iphone{
+  border: 1px solid white;
+}
+.logo{
+  width: 70px;
 }
 #map {
     height: 350px;
