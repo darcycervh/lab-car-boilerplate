@@ -1,3 +1,4 @@
+/* Los estilos de tu proyecto */
 *{
     margin: 0;
     padding: 0;
@@ -43,6 +44,12 @@ border-radius: 5px;
 }
 .logo{
   width: 70px;
+}
+.nav-extra{
+  display: none;
+}
+.content2{
+  display: none;
 }
 #map {
     height: 350px;
